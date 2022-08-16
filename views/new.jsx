@@ -21,7 +21,7 @@ function New () {
                 type="text"
                 name="image"
                 id="image" />
-                <label htmlFor="hasGluten">Has Gluiten?</label>
+                <label htmlFor="hasGluten">Has Gluten?</label>
                 <input
                 type="checkbox"
                 name="hasGluten"
