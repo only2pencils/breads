@@ -4,13 +4,14 @@ function Default(html) {
   return (
     <html>
       <head>
-        <title>Default</title>
+        <title>{html.title || 'Default'}</title>
       </head>
       <body>
         <h1>HTML Rendered!</h1>
-        <div className="container">
+        {/* got rid of div className */}
+        {/* <div className="container"> */}
             {html.children}
-        </div>
+        {/* </div> */}
       </body>
     </html>
   )
