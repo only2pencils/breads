@@ -8,7 +8,6 @@ function New () {
         <div className="backButton">
           <a href="/breads"><button>Go back to the index</button></a>
         </div>
-
         <form action="/breads" method="POST">
           <label htmlFor="name">Name</label>
           <input

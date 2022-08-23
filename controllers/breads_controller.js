@@ -11,7 +11,7 @@ breads.get("/", (req, res) => {
   // res.send(Bread);
 });
 
-// NEW
+// NEW RK
 breads.get("/new", (req, res) => {
   res.render("new");
 });
@@ -21,10 +21,17 @@ breads.get("/:arrayIndex", (req, res) => {
   if (Bread[req.params.arrayIndex]) {
     res.render("Show", {
       bread: Bread[req.params.arrayIndex],
+      index: req.params.arrayIndex,
     });
   } else {
-    res.send("404");
+    res.render("404");
   }
+});
+
+// DELETE //WHAT ROUTES SHOULD I ADD THIS TO?
+breads.delete("/:indexArray", (req, res) => {
+  Bread.splice(req.params.indexArray, 1);
+  res.status(303).redirect("/breads");
 });
 
 // CREATE
