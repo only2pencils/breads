@@ -25,6 +25,7 @@ function Show ({bread, index}) {
 </form>
 
   <li><a href="/breads">Go home</a></li>
+  <li><a href={`/breads/${index}/edit`}><button>Edit</button></a></li>
 </Default>
 
     )

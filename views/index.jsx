@@ -4,6 +4,8 @@ const Default = require('./layouts/Default')
 function Index ({breads, title}) {
     return (
       <Default title={title}>
+<link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
+...
         <h2>Index Page</h2>
         <div className="newButton">
             <a href="/breads/new"><button>Add a new bread</button></a>
