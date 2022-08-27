@@ -1,37 +1,36 @@
-const React = require('react')
-const Default = require('./layouts/Default')
+// const React = require('react')
+// const Default = require('./layouts/Default')
 
-// function Show ({bread}) {
-function Show ({bread, index}) {
-
+// // function Show ({bread}) {
+// // Confirm we are getting our bread data in the terminal.
+// function Show ({bread, index}) {
+//     return (
+// <Default>
+//   <h3>{bread.name}</h3>
+//   <p>
+//     and it
+//     {
+//       bread.hasGluten
+//       ? <span> does </span>
+//       : <span> does NOT </span>
+//     }
+//     have gluten.
+//   </p>
+//   <img src={bread.image} alt={bread.name}/>
+//   <p>{bread.getBakedBy()}</p>
+//   <a href={`/breads/${bread.id}/edit`}><button>Edit</button></a>
+//   <a href="/breads">Go home</a>
+// <form action={`/breads/${bread.id}?_method=DELETE`} method="POST">
+//   <input type='submit' value="DELETE"/>
+// </form>
   
-    // Confirm we are getting our bread data in the terminal.
-//   console.log(bread.name)
-    return (
-<Default>
-  <h3>{bread.name}</h3>
-  <p>
-    and it
-    {
-      bread.hasGluten
-      ? <span> does </span>
-      : <span> does NOT </span>
-    }
-    have gluten.
-  </p>
-  <img src={bread.image} alt={bread.name} />
-<form action={`/breads/${index}?_method=DELETE`} method="POST">
-  <input type='submit' value="DELETE"/>
-</form>
+  
+// </Default>
 
-  <li><a href="/breads">Go home</a></li>
-  <li><a href={`/breads/${index}/edit`}><button>Edit</button></a></li>
-</Default>
+//     )
+// }
 
-    )
-}
-
-module.exports = Show
+// module.exports = Show
 
 // const React = require ('react')
 // const Default = require ('./layouts/Default')
